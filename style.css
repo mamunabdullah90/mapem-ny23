@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(110.3deg, rgba(72, 85, 99, 1) 8.8%, rgba(127, 146, 166, 1) 95.1%);
+    overflow: auto;
+    min-height: 100vh;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: #171010;
+    text-align: center;
+    color: gold;
+}
+
+.top h3 {
+    font-weight: 600;
+    padding: 5px 0px;
+    letter-spacing: 1px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.top::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.navbar {
+    background-color: #40868b;
+    padding: 1% 7%;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.navbar h2 {
+    color: #ffffff;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px #FF0000;
+}
+
+.navbar h2 span {
+    color: #000000;
+    font-weight: bolder;
+    animation: anim1 2s linear infinite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 3px #FF0000;
+}
+
+@keyframes anim1 {
+    50% {
+        color: yellowgreen;
+    }
+
+    100% {
+        color: #ffffff;
+    }
+}
+
+.navbar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 5px;
+    flex-direction: column;
+    row-gap: 50px;
+    width: 100%;
+}
+
+.slideshow-container .img1 {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 5px 8px 12px #ffffff;
+}
+
+.slideshow-container .img2 {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 5px 8px 12px #ffffff;
+}
+
+.slideshow-container .img3 {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 5px 8px 12px #ffffff;
+}
+
+.slideshow-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.copyright {
+    background: transparent;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 0;
+    width: 100%;
+    display: block;
+}
+
+.copyright p {
+    font-size: x-small;
+    letter-spacing: 1px;
+    color: yellow;
+}
+
+.copyright::after {
+    content: "";
+    clear: both;
+    display: table;
+}
